@@ -1,0 +1,53 @@
+<HTML><HEAD><TITLE>插入 MediaPlayer 播放器</TITLE>
+<META content="text/html; charset=gb2312" http-equiv=Content-Type>
+<meta HTTP-EQUIV=Expires CONTENT=0>
+<style type="text/css">
+p
+	{
+	font-size: 14px;
+	margin-top: 5px;
+	line-height:140%;
+	}
+body,td,th {
+	font-size: 14px;
+	line-height:140%;
+}
+</style>
+<script language="JavaScript">
+var oEditor = window.parent.InnerDialogLoaded() ;
+var FCKMediaPlayer = oEditor.FCKMediaPlayer ;
+var FCKLang = oEditor.FCKLang ;
+
+window.onload = function ()
+{
+	oEditor.FCKLanguageManager.TranslatePage( document ) ;
+	
+	// Show the "Ok" button.
+	window.parent.SetOkButton( true ) ;	
+}
+
+function Ok()
+{
+	if( Url.value.length < 10 )
+	{
+		alert('请输入正确的文件链接地址！');
+	}
+	else
+	{
+		FCKMediaPlayer.Insert(Url.value,Width.value,Height.value,document.getElementById("AutoStart").checked);
+		return true ;
+	}
+}
+</Script>
+<BODY>
+<TABLE border=0 cellPadding=0 cellSpacing=5 align=center style="padding-left:5px;width=98%">
+<TR>
+    <TD colSpan=2>文件地址 : <INPUT id=Url size=40 value="http://"></TD></TR>
+<TR>
+    <TD>文件宽度 : <INPUT id=Width size=7 value=480 ONKEYPRESS="event.returnValue=IsDigit();"></TD></TR>
+<TR>
+    <TD>文件高度 : <INPUT id=Height size=7 value=360 ONKEYPRESS="event.returnValue=IsDigit();"></TD></TR>
+<TR>
+    <TD>播放模式 : <INPUT TYPE="radio" name="AutoStart" value=1 checked >自动 <INPUT TYPE="radio" name="AutoStart" value=0 >手动</TD></TR>
+</TABLE>
+</BODY></HTML>

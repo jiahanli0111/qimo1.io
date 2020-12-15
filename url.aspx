@@ -1,0 +1,1 @@
+<%@ Page language="c#" Codebehind="url.aspx.cs" AutoEventWireup="false" Inherits="JFCmsEnterprise.url" %>

@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>七子饼茶</title>
+<link href="style/base.css" rel="stylesheet" type="text/css"/>
+<link href="style/style.css" rel="stylesheet" type="text/css"/>
+<link href="image/logo.jpg" rel="shortcut icon"/>
+<script src="js/js.js" type="text/javascript"></script>
+<style>
+*{padding: 0px;margin: 0px;}
+.wrap{overflow: hidden;}
+  .clear{clear: both;}
+
+    div h2{color: rgb(102, 102, 211);font-size: 30px;}
+    div p{color: black;font-size: 20px;}
+    div li{color: coral;font-family: 隶书;font-size: 23px;}
+    table th{font-size: 20px;font-family: 宋体;text-align: center;}
+    table tr{font-size: 20px;font-family: 楷体;text-align: center;}
+    table p{color: white;font-size: 20px;}
+    table a{font-size: 20px;font-family: 宋体;}
+
+
+    
+
+    .jj{width: 1100px;height: 310px; border:0.02px solid wheat;}
+    .jj-1{font-size: 18px; width: 880px;height:310px;margin: 0 220 0 0; border: 0.02px solid rosybrown;}
+    .jj-1 p{font-size: 25px;color:rgb(37, 105, 37);}
+    .jj-2{width: 220px;height: 138px;float:right;position:relative;border: 0.02px solid plum;}
+    .jj-2 img{margin: 0 0 86 880;}
+    
+   body,p{margin: 0;}
+   h2{margin: 0;font-size:100%;}
+   ul{margin: 0;padding: 0;list-style: none;height: 260px;}   
+   a{text-decoration: none;color:inherit;}
+   .box{width: 1100px;border: 1px solid #999;overflow: hidden; margin:10px auto;}
+   .nav{margin-left: -1px;font: 14px "微软雅黑";overflow: hidden;background-color: #f1f1f1;}
+   .navI{float: left;width: 220px;box-sizing: border-box;}
+   h2{line-height: 40px;text-align: center;cursor: pointer;border-left: 1px solid #cecece;border-bottom: 1px solid #cecece;}
+  .navI-tit{font-size: 18px;}
+  .navI-txt{width: 1100px;height:400px;text-indent:2em;line-height: 2;background:rgb(209, 241, 182);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml1{margin-left:-220px; background:rgb(195, 243, 210);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml2{margin-left:-440px; background:hsl(226, 64%, 84%);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml3{margin-left:-660px; background:hsl(207, 80%, 83%);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml4{margin-left:-880px;background: rgb(235, 234, 219);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .navI_active{position:relative;z-index:1;}
+  li:hover{position:relative;z-index:999;}
+  li:hover h2{background:#CCC;border-bottom:none;}
+</style>
+
+
+
+    
+<!--飘窗-->
+<style type="text/css">
+    a{ text-decoration:none;}
+    *{
+        padding:0px;
+        margin: 0px;
+    }    
+    #div1{
+        width:50px;
+        height:50px;
+        border: 1px solid red; 
+      line-height:40px; 
+      text-align:center;
+      color:yellow;
+      position: absolute;/*绝对定位*/
+      z-index: 9999;
+    }
+    </style>
+       <script type="text/javascript">
+       window.onload=function(){
+        var oDiv=document.getElementById('div1');//获得div元素
+        var x=1,y=1;
+        var float=function(){
+          var hei=oDiv.offsetHeight;//获得div的高度(加边框)
+          var k_hei=document.documentElement.clientHeight;//获得可视区域的高度
+          var max_top=k_hei-hei;//获得可以达到的最大高度
+      
+          var wid=oDiv.offsetWidth;//获得div的宽度(加边框)
+          var k_wid=document.documentElement.clientWidth;//获得可视区域的宽度
+          var max_left=k_wid-wid;//获得可以达到的最大宽度
+      
+          var left=oDiv.offsetLeft;//获得瞬时的离左边的距离
+          var top=oDiv.offsetTop;//获得离上边的距离
+          var new_left=left+1*x;//每过一个间隔，往右移一个像素
+          var new_top=top+1*y;//每过一个间隔，往下移一个像素
+          if(new_top>=max_top||new_top==0){y=-1*y;}//当新位置离上边距离大于最大位置，或新位置离上边距离等于0时(向左走时)，上下方向上反向
+          if(new_left>=max_left||new_left==0){x=-1*x;	}//当新位置离左边距离大于最大位置，或新位置离左边距离等于0时(向左走时)，左右方向上反向
+            
+          oDiv.style.left=new_left+'px';//赋值(离左边的距离)
+          oDiv.style.top=new_top+'px';//赋值(离右边的距离)
+        }
+        var flap=setInterval(float,10); //定时器
+        oDiv.onmouseout=function(){flap=setInterval(float,10)};
+        oDiv.onmouseover=function(){clearInterval(flap)};
+      } 
+        </script>
+    
+    </head>
+    <body>
+       <div id="div1"> 
+        <a href="http://www.baidu.com"><img class="div1" src="image\小狮子.png" height=50px width=50px></a> 
+       </div> 
+
+
+    <div class="wrap" style="top: 0px;">
+        <div class="clear"> <!--logo部分-->
+            <div class="head_left">
+                <img src="image/lo.png" width="140px" height="200px"/>
+            </div>
+            <div class="head_right">
+                <img src="image/lo.png" width="140px" height="200px"/>  
+            </div>
+            <div class="div1-right-1"> 
+              <div class="box-left-1"> 
+             <ul><a href=index.html>返回首页</a></ul>
+              </div>
+            </div>
+              
+          
+            <div class="wrap_left-1">
+                <img src="image/牡丹4.png" width="100px" height="70px"/>  </div>
+            <div class="wrap_left-2">
+                <img src="image/牡丹5.png" width="70px" height="40px"/>  </div>
+            <div class="wrap_left-3">
+                <img src="image/牡丹5.png" width="100px" height="60px"/>   </div>
+             </div>
+        
+         <div id="flash">
+     <div id="prev"></div>
+     <div id="next"></div>
+	 <ul id="play">
+         <marquee scrollAmount=15 scrolldelay="15" loop=-1>
+            <img src="image/茶叶1.jpg"width="1100" height="320">
+            <img src="image/茶叶2.jpg" width="1100" height="320">
+            <img src="image/茶叶3.jpg" width="1100" height="320">
+            <img src="image/茶叶4.jpg"width="1100" height="320">
+            </marquee>	
+	 </ul>
+	 <ul id="button">
+     </ul>
+</div>
+
+<div class="ll">
+    <img src="image/a-8.gif" width="1100px" height="30px">
+  </div>
+
+ <div class="menu"> <!--导航部分-->
+  <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="饼茶.html">饼茶</a>
+          <ul> 
+            <li><a href="饼茶.html">饼茶简介</a></li>
+            <li><a href="饼茶.html">制作流程</a></li>
+            <li><a href="饼茶.html">饼茶历史</a></li>
+            <li><a href="饼茶.html">相关资料</a></li>
+        </ul>
+    </li>
+    <li><a href="金瓜贡茶.html">金瓜贡茶</a>
+        <ul>
+            <li><a href="金瓜贡茶.html">金瓜贡茶简介</a></li>
+            <li><a href="金瓜贡茶.html">制作流程</a></li>
+            <li><a href="金瓜贡茶.html">金瓜贡茶历史</a></li>
+            <li><a href="金瓜贡茶.html">相关资料</a></li>
+        </ul>
+    </li>
+    <li><a href="老茶头.html">老茶头</a>
+        <ul>
+            <li><a href="老茶头.html">老茶头简介</a></li>
+            <li><a href="老茶头.html">制作流程</a></li>
+            <li><a href="老茶头.html">老茶头历史</a></li>
+            <li><a href="老茶头.html">相关资料</a></li>
+        </ul>
+    </li>
+    <li><a href="七子饼茶.html">七子饼茶</a>
+        <ul>
+            <li><a href="七子饼茶.html">七子饼茶简介</a></li>
+            <li><a href="七子饼茶.html">制作流程</a></li>
+            <li><a href="七子饼茶.html">七子饼茶历史</a></li>
+            <li><a href="七子饼茶.html">相关资料</a></li>
+        </ul>
+        <li><a href="沱茶.html">沱茶</a>
+            <ul>
+                <li><a href="沱茶.html">沱茶简介</a></li>
+                <li><a href="沱茶.html">制作流程</a></li>
+                <li><a href="沱茶.html">沱茶历史</a></li>
+                <li><a href="沱茶.html">相关资料</a></li>
+            </ul>
+        </li>
+        <li><a href="香菇紧茶.html">香菇紧茶</a>
+            <ul>
+                <li><a href="香菇紧茶.html">香菇紧茶简介</a></li>
+                <li><a href="香菇紧茶.html">制作流程</a></li>
+                <li><a href="香菇紧茶.html">香菇紧茶历史</a></li>
+                <li><a href="香菇紧茶.html">相关资料</a></li>
+            </ul>
+        </li>
+       
+        </li>
+        <li><a href="小金沱.html">小金沱</a>
+            <ul>
+                <li><a href="小金沱.html">小金沱简介</a></li>
+                <li><a href="小金沱.html">制作流程</a></li>
+                <li><a href="小金沱.html">小金沱历史</a></li>
+                <li><a href="小金沱.html">相关资料</a></li>
+            </ul>
+        </li>
+        <li><a href="柱茶.html">柱茶</a>
+            <ul>
+                <li><a href="柱茶.html">柱茶简介</a></li>
+                <li><a href="柱茶.html">制作流程</a></li>
+                <li><a href="柱茶.html">柱茶历史</a></li>
+                <li><a href="柱茶.html">相关资料</a></li>
+              </ul>
+          </li>
+        </div >
+<div class="ll">
+  <img src="image/a.jpg" width="1100px" height="30px">
+</div>
+
+<div class="qmj">
+    
+    <h2>七子饼茶简介</h2>
+
+    <p>&nbsp;&nbsp;圆茶是一和圆周饼形的蒸压黑茶包装时每装7块，因此又称“七子饼茶”，七子饼茶又称国茶，是云南普洱茶传统加工制作技艺的一种。七子饼茶属紧压茶,外形美观，为圆饼形，酷似满月。因每7个饼茶包装为一筒，故称七子饼茶。七子饼茶因汤色红黄明亮,香气浓郁持久，滋味醇厚爽口而著称。</p>
+    <p>&nbsp;&nbsp;七子饼茶，又称圆茶，系将茶叶加工紧压成圆饼形，每7块包装为1筒，故名。以普洱散茶为原料，经筛、拣、高温消毒、蒸压定型等工序制成，成品呈圆饼形，直径21厘米，顶部微凸，中心厚2厘米，边缘稍薄，为1厘米，底部平整而中心有凹陷小坑，每饼重357克，以白绵纸包装后，每7块用竹笋叶包装成1筒，古色古香，宜于携带及长期贮藏。</p>
+    <h2>制作流程</h2>
+    <p>&nbsp;&nbsp;采摘季节一般是在清明节前后，玉芽初展的季节里，采茶人早上八点便开始采茶，采摘茶树的新芽尖、一片嫩叶；有的需要攀爬较高的茶树采摘，因为有很多的茶树都是古老茶树，树龄较长，长势高大，所以需要攀爬采摘。</p>
+    <p>&nbsp;&nbsp;采摘好的茶叶回来后，需要摊放在一个阴凉的地方，静静的等待茶叶水分蒸发，含水量减少至原来重量的40%左右即可。</p>
+    <p>&nbsp;&nbsp; 这是一个非常关键的环节。把放置后的茶芽，用煮茶专用锅烧到200度的水，放入茶叶，焖5分钟的时间；杀青，一般都是抛、焖的结合，也就是多抛、少焖。</p>
+    <p>&nbsp;&nbsp; 揉捻的时间，一般都需要在30-40分钟左右的时间，采用大叶种的鲜芽，采用冷揉的手法，加压的过程中不可以太重手，一定要适中。</p>
+    <p>&nbsp;&nbsp;经过杀青、揉捻后，基本已经算是成形茶了，接下来是放在太阳下晒干，也就是晒青步骤了。天气对于晒青的影响是比较大的，虽然香气不及时的烤干，不过口感回甘却依然是非常独特的，晒青后的毛茶，含水量成分大概是10%左右。</p>
+
+    <h2>七子饼茶历史</h2>
+    <p>&nbsp;&nbsp;七子饼茶始于何时，如何得名，为什么要七饼为一筒，意寓着什么，人们说法不一，圆圆满满多子多福，这是近几十年来普遍的说法。这种说法有送吉祥，有亲和感，有人情味，比喻的也十分贴切，听起来使人心暖情悦，在新时代里这种解释再好不过了。</p>
+    <p>&nbsp;&nbsp; 其实，七子饼的起源和得名时间并不遥远，是大清帝国兴盛时期，是普洱府成立以后的事了。</p>
+    <p>&nbsp;&nbsp; 雍正七年（1729年）清政府对西双版纳进行改土归流，置建了普洱府。西双版纳是当时最大的产茶区，为垄断，清政府在思茅（今普洱市）设立总茶店由官方垄断经营茶叶。但思茅总店的设立并未能解决已划归的普洱府的六大茶山的茶农与茶商与官府之间的矛盾，总茶店弊端显露，直接影响到西双版纳的安宁。</p>
+   
+    <h2>相关资料</h2>
+    <p>&nbsp;&nbsp;七子饼茶历史悠久，可以追溯到周武王时期，“巴蜀之地有普茶，其状圆、曰：七子饼茶”，据《华阳国志》记载：“周武王伐纣，实得巴蜀之师，鱼盐铜铁、丹漆茶蜜、皆纳贡之。”</p>
+    <p>&nbsp;&nbsp; 这是最早的七子饼茶的历史记载。后三国时期，有武侯遗种之说。清雍正年间，云贵总督鄂尔泰，在滇设茶叶局，统管云南茶叶贸易。鄂尔泰勒令云南各茶山茶园顶级普洱茶由国家统一收购，挑选一流制茶师手工精制成饼，七饼一筐、谓之七子饼茶。</p>
+    <p>&nbsp;&nbsp; 并亲自督办，在贡茶上印《鄂尔泰》私宝，进贡朝廷。于公元1732年，正式列入《贡茶案册》，此为有记载的，最早的七子饼茶进贡历史。</p>
+   
+           
+   
+
+
+<table width="1100" height="188">
+  <tr>
+    <td height="45" colspan="2" align="center" bgcolor="#666666" ><div ="center"><strong><p>关于我们</p></strong></div></td>
+    <td width="302" align="center" bgcolor="#666666"><div ="center"><strong><p>交流中心</p></strong></div></td>
+    <td colspan="3" align="center" bgcolor="#666666"><div ="center"><strong><p>联系我们</p></strong></div></td>
+  </tr>
+  <tr>
+    <td rowspan="3">&nbsp;</td>
+    <td width="262" height="38"><strong><a>电话：0877-666666</a></strong></td>
+    <td><strong><a>版权所有：计机19-2班 组</a></strong></td>
+    <td width="113" rowspan="4">&nbsp;</td>
+    <td width="44" rowspan="4"><div ="center">  <strong><a>扫</a></strong></div>                             
+     <div ="center"><strong><a>一</a></strong></div>  <div ="center"><strong><a>扫</a></strong></div></td>
+    <td width="243" rowspan="4" align="right"><img src="image/二维码.jpg" width="124" height="124"></td>
+  </tr>
+  <tr>
+    <td height="47"><strong><a>邮箱：18669064462@qq.com</a></strong></td>
+    <td><strong><a>邮编：650221</a></strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2" align="center"><div ="left"><strong><a>版权信息</a></strong></div>                          <div ="left"></div></td>
+  </tr>
+  <tr>
+    <td width="58" height="46">&nbsp;</td>
+  </tr>
+</table>
+<form name="form1" method="post" action="">
+<label for="textarea"></label>
+<div>
+<p><br>
+</p>
+</div>
+</form>
+</div>
+</div>
+<div class="link"></div>
+
+
+<div class="cebian">
+<ul>
+<li>优选</li>
+<li>广场</li>
+<li>推荐</li>
+<li>客服</li>
+<li>反馈</li>
+</ul>
+
+</div>
+</boby>
+</html>

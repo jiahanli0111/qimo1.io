@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>砖茶</title>
+<link href="style/base.css" rel="stylesheet" type="text/css"/>
+<link href="style/style.css" rel="stylesheet" type="text/css"/>
+<link href="image/logo.jpg" rel="shortcut icon"/>
+<script src="js/js.js" type="text/javascript"></script>
+<style>
+*{padding: 0px;margin: 0px;}
+.wrap{overflow: hidden;}
+  .clear{clear: both;}
+
+    div h2{color: rgb(102, 102, 211);font-size: 30px;}
+    div p{color: black;font-size: 20px;}
+    div li{color: coral;font-family: 隶书;font-size: 23px;}
+    table th{font-size: 20px;font-family: 宋体;text-align: center;}
+    table tr{font-size: 20px;font-family: 楷体;text-align: center;}
+    table p{color: white;font-size: 20px;}
+    table a{font-size: 20px;font-family: 宋体;}
+
+
+    
+
+    .jj{width: 1100px;height: 310px; border:0.02px solid wheat;}
+    .jj-1{font-size: 18px; width: 880px;height:310px;margin: 0 220 0 0; border: 0.02px solid rosybrown;}
+    .jj-1 p{font-size: 25px;color:rgb(37, 105, 37);}
+    .jj-2{width: 220px;height: 138px;float:right;position:relative;border: 0.02px solid plum;}
+    .jj-2 img{margin: 0 0 86 880;}
+    
+   body,p{margin: 0;}
+   h2{margin: 0;font-size:100%;}
+   ul{margin: 0;padding: 0;list-style: none;height: 260px;}   
+   a{text-decoration: none;color:inherit;}
+   .box{width: 1100px;border: 1px solid #999;overflow: hidden; margin:10px auto;}
+   .nav{margin-left: -1px;font: 14px "微软雅黑";overflow: hidden;background-color: #f1f1f1;}
+   .navI{float: left;width: 220px;box-sizing: border-box;}
+   h2{line-height: 40px;text-align: center;cursor: pointer;border-left: 1px solid #cecece;border-bottom: 1px solid #cecece;}
+  .navI-tit{font-size: 18px;}
+  .navI-txt{width: 1100px;height:400px;text-indent:2em;line-height: 2;background:rgb(209, 241, 182);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml1{margin-left:-220px; background:rgb(195, 243, 210);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml2{margin-left:-440px; background:hsl(226, 64%, 84%);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml3{margin-left:-660px; background:hsl(207, 80%, 83%);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .ml4{margin-left:-880px;background: rgb(235, 234, 219);text-align: center;font-family: 微软雅黑;font-size: 17px;}
+  .navI_active{position:relative;z-index:1;}
+  li:hover{position:relative;z-index:999;}
+  li:hover h2{background:#CCC;border-bottom:none;}
+
+</style>
+
+
+<!--飘窗-->
+<style type="text/css">
+    a{ text-decoration:none;}
+    *{
+        padding:0px;
+        margin: 0px;
+    }    
+    #div1{
+        width:50px;
+        height:50px;
+        border: 1px solid red; 
+      line-height:40px; 
+      text-align:center;
+      color:yellow;
+      position: absolute;/*绝对定位*/
+      z-index: 9999;
+    }
+    </style>
+       <script type="text/javascript">
+       window.onload=function(){
+        var oDiv=document.getElementById('div1');//获得div元素
+        var x=1,y=1;
+        var float=function(){
+          var hei=oDiv.offsetHeight;//获得div的高度(加边框)
+          var k_hei=document.documentElement.clientHeight;//获得可视区域的高度
+          var max_top=k_hei-hei;//获得可以达到的最大高度
+      
+          var wid=oDiv.offsetWidth;//获得div的宽度(加边框)
+          var k_wid=document.documentElement.clientWidth;//获得可视区域的宽度
+          var max_left=k_wid-wid;//获得可以达到的最大宽度
+      
+          var left=oDiv.offsetLeft;//获得瞬时的离左边的距离
+          var top=oDiv.offsetTop;//获得离上边的距离
+          var new_left=left+1*x;//每过一个间隔，往右移一个像素
+          var new_top=top+1*y;//每过一个间隔，往下移一个像素
+          if(new_top>=max_top||new_top==0){y=-1*y;}//当新位置离上边距离大于最大位置，或新位置离上边距离等于0时(向左走时)，上下方向上反向
+          if(new_left>=max_left||new_left==0){x=-1*x;	}//当新位置离左边距离大于最大位置，或新位置离左边距离等于0时(向左走时)，左右方向上反向
+            
+          oDiv.style.left=new_left+'px';//赋值(离左边的距离)
+          oDiv.style.top=new_top+'px';//赋值(离右边的距离)
+        }
+        var flap=setInterval(float,10); //定时器
+        oDiv.onmouseout=function(){flap=setInterval(float,10)};
+        oDiv.onmouseover=function(){clearInterval(flap)};
+      } 
+        </script>
+    
+    </head>
+    <body>
+       <div id="div1"> 
+        <a href="http://www.baidu.com"><img class="div1" src="image\小狮子.png" height=50px width=50px></a> 
+       </div> 
+  
+    <div class="wrap" style="top: 0px;">
+        <div class="clear"> <!--logo部分-->
+            <div class="head_left">
+                <img src="image/lo.png" width="140px" height="200px"/>
+            </div>
+            <div class="head_right">
+                <img src="image/lo.png" width="140px" height="200px"/>  
+            </div>
+            <div class="div1-right-1"> 
+              <div class="box-left-1"> 
+             <ul><a href=index.html>返回首页</a></ul>
+              </div>
+            </div>
+              
+            
+            <div class="wrap_left-1">
+                <img src="image/牡丹4.png" width="100px" height="70px"/>  </div>
+            <div class="wrap_left-2">
+                <img src="image/牡丹5.png" width="70px" height="40px"/>  </div>
+            <div class="wrap_left-3">
+                <img src="image/牡丹5.png" width="100px" height="60px"/>   </div>
+             </div>
+        
+         <div id="flash">
+     <div id="prev"></div>
+     <div id="next"></div>
+	 <ul id="play">
+         <marquee scrollAmount=15 scrolldelay="15" loop=-1>
+            <img src="image/茶叶1.jpg"width="1100" height="320">
+            <img src="image/茶叶2.jpg" width="1100" height="320">
+            <img src="image/茶叶3.jpg" width="1100" height="320">
+            <img src="image/茶叶4.jpg"width="1100" height="320">
+            </marquee>	
+	 </ul>
+	 <ul id="button">
+     </ul>
+</div>
+
+<div class="ll">
+    <img src="image/a-8.gif" width="1100px" height="30px">
+  </div>
+
+ <div class="menu"> <!--导航部分-->
+  <ul>
+      <li><a href="index.html">首页</a></li>
+      <li><a href="饼茶.html">饼茶</a>
+          <ul> 
+            <li><a href="饼茶.html">饼茶简介</a></li>
+            <li><a href="饼茶.html">制作流程</a></li>
+            <li><a href="饼茶.html">饼茶历史</a></li>
+            <li><a href="饼茶.html">相关资料</a></li>
+        </ul>
+    </li>
+    <li><a href="金瓜贡茶.html">金瓜贡茶</a>
+        <ul>
+            <li><a href="金瓜贡茶.html">金瓜贡茶简介</a></li>
+            <li><a href="金瓜贡茶.html">制作流程</a></li>
+            <li><a href="金瓜贡茶.html">金瓜贡茶历史</a></li>
+            <li><a href="金瓜贡茶.html">相关资料</a></li>
+        </ul>
+    </li>
+    <li><a href="老茶头.html">老茶头</a>
+        <ul>
+            <li><a href="老茶头.html">老茶头简介</a></li>
+            <li><a href="老茶头.html">制作流程</a></li>
+            <li><a href="老茶头.html">老茶头历史</a></li>
+            <li><a href="老茶头.html">相关资料</a></li>
+        </ul>
+    </li>
+    <li><a href="七子饼茶.html">七子饼茶</a>
+        <ul>
+            <li><a href="七子饼茶.html">七子饼茶简介</a></li>
+            <li><a href="七子饼茶.html">制作流程</a></li>
+            <li><a href="七子饼茶.html">七子饼茶历史</a></li>
+            <li><a href="七子饼茶.html">相关资料</a></li>
+        </ul>
+        <li><a href="沱茶.html">沱茶</a>
+            <ul>
+                <li><a href="沱茶.html">沱茶简介</a></li>
+                <li><a href="沱茶.html">制作流程</a></li>
+                <li><a href="沱茶.html">沱茶历史</a></li>
+                <li><a href="沱茶.html">相关资料</a></li>
+            </ul>
+        </li>
+        <li><a href="香菇紧茶.html">香菇紧茶</a>
+            <ul>
+                <li><a href="香菇紧茶.html">香菇紧茶简介</a></li>
+                <li><a href="香菇紧茶.html">制作流程</a></li>
+                <li><a href="香菇紧茶.html">香菇紧茶历史</a></li>
+                <li><a href="香菇紧茶.html">相关资料</a></li>
+            </ul>
+        </li>
+       
+        </li>
+        <li><a href="小金沱.html">小金沱</a>
+            <ul>
+                <li><a href="小金沱.html">小金沱简介</a></li>
+                <li><a href="小金沱.html">制作流程</a></li>
+                <li><a href="小金沱.html">小金沱历史</a></li>
+                <li><a href="小金沱.html">相关资料</a></li>
+            </ul>
+        </li>
+        <li><a href="柱茶.html">柱茶</a>
+            <ul>
+                <li><a href="柱茶.html">柱茶简介</a></li>
+                <li><a href="柱茶.html">制作流程</a></li>
+                <li><a href="柱茶.html">柱茶历史</a></li>
+                <li><a href="柱茶.html">相关资料</a></li>
+              </ul>
+          </li>
+        </div >
+<div class="ll">
+  <img src="image/a.jpg" width="1100px" height="30px">
+</div>
+
+<div class="dwj">
+    
+   
+   
+    <h2>端午节由来</h2>
+    <p>&nbsp;&nbsp;端午节，本是南方吴越先民创立用于拜祭龙祖的节日，因传说战国时期的楚国诗人屈原在五月五日跳汨罗江自尽，后来人们亦将端午节作为纪念屈原的节日；</p>
+    <p>&nbsp;&nbsp;也有纪念伍子胥、曹娥及介子推等说法。总的来说，端午节起源于上古先民择“龙升天”吉日祭龙祖，注入夏季时令“祛病防疫"风尚，把端午视为“恶月恶日”起于北方中原，附会纪念屈原等历史人物纪念内容。端午风俗形成可以说是南北风俗融合的产物。
+    </p>
+    
+        <ul>
+            <li>>&nbsp;&nbsp;*纪念"屈原"</li>
+            <p>&nbsp;&nbsp;传说端午节是为了纪念战国时代楚国诗人屈原，他在五月初五这天投汨罗江自尽殉国。屈原虽忠事楚怀王，却屡遭排挤，怀王死后又因顷襄王听信谗言而被流放，最终投汨罗江而死。据说，屈原投汨罗江后，当地百姓闻讯马上划船捞救，一直行至洞庭湖，始终不见屈原的尸体。那时，恰逢雨天，湖面上的小舟一起汇集在岸边的亭子旁。当人们得知是为了打捞贤臣屈大夫时，再次冒雨出动，争相划进茫茫的洞庭湖。为了寄托哀思，人们荡舟江河之上，此后才逐渐发展成为龙舟竞赛。百姓们又怕江河里的鱼吃掉他的身体，就纷纷回家拿来米团投入江中，以免鱼虾糟蹋屈原的尸体，后来就成了吃粽子的习俗。看来，端午节吃粽子、赛龙舟与纪念屈原相关。       </p>
+          
+         </ul>
+
+    <h2>有关习俗</h2> 
+    <p>&nbsp;&nbsp;民谚说：“清明插柳，端午插艾”。在端午节，人们把插艾和菖蒲作为重要内容之一。家家都洒扫庭除，以菖蒲、艾条插于门眉，悬于堂中。并用菖蒲、艾叶、榴花、蒜头、龙船花，制成人形或虎形，称为艾人、艾虎；制成花环、佩饰，美丽芬芳，妇人争相佩戴，用以驱瘴。
+    </p>
+    
+    <p>&nbsp;&nbsp;端午节吃粽子，这是中国人民的又一传统习俗。粽子，又叫“角黍”、“筒粽”。其由来已久，花样繁多。
+
+        　　据记载，早在春秋时期，用菰叶（茭白叶）包黍米成牛角状，称“角黍”；用竹筒装米密封烤熟，称“筒粽”。东汉末年，以草木灰水浸泡黍米，因水中含碱，用菰叶包黍米成四角形，煮熟，成为广东碱水粽。
+    </p>
+    <p>&nbsp;&nbsp;到了唐代，粽子的用米，已“白莹如玉”，其形状出现锥形、菱形。日本文献中就记载有“大唐粽子”。宋朝时，已有“蜜饯粽”，即果品入粽。诗人苏东坡有“时于粽里见杨梅”的诗句。这时还出现用粽子堆成楼台亭阁、木车牛马作的广告，说明宋代吃粽子已很时尚。元、明时期，粽子的包裹料已从菰叶变革为箬叶，后来又出现用芦苇叶包的粽子，附加料已出现豆沙、猪肉、松子仁、枣子、胡桃等等，品种更加丰富多彩。
+    </p>
+   
+
+
+
+
+
+    <h2>有关诗词</h2>
+
+
+   
+
+    <div class="box">
+        <ul class="nav">
+            <li class="navI navI_active">
+                <h2 class="navI-tit">《卜算子 五月》</h2>
+                <ul class="navI-txt">
+                    <p>纳兰容若</p>
+                     <li>村静午鸡啼，绿暗新阴覆。</li>
+                     <li>一展轻帘出画墙，道是端阳酒。</li>
+                     <li>早晚夕阳蝉，又噪长堤柳。</li>
+                     <li>青鬓长青自古谁，弹指黄花九。</li>
+                </ul>
+            </li>
+            <li class="navI">
+                <h2 class="navI-tit">《浣溪沙 端午》</h2>
+                <ul class="navI-txt ml1">
+                    <p>苏轼</p>
+                    <li>轻汗微微透碧纨，明朝端午浴芳兰。</li>
+                    <li>流香涨腻满晴川。彩线轻缠红玉臂，小符斜挂绿云鬟。 </li>
+                    <li>佳人相见一千年。</li>
+                  
+                </ul>
+            </li>
+            <li class="navI">
+                <h2 class="navI-tit">《七律　端午》</h2>
+                <ul class="navI-txt ml2">
+                    <p>老舍</p>
+                    <li>端午偏逢风雨狂，村童仍着旧衣裳。</li>
+                    <li>相邀情重携蓑笠，敢为泥深恋草堂；</li>
+                    <li>有客同心当骨肉，无钱买酒卖文章。</li>
+                    <li>当年此会鱼三尺，不似今朝豆味香。</li>
+                </ul>
+            </li>
+            <li class="navI">
+                <h2 class="navI-tit">《五月五日 》</h2>
+                <ul class="navI-txt ml3">
+                    <p>梅尧臣</p>
+                    <li>屈氏已沉死，楚人哀不容。</li>
+                    <li>何尝奈谗谤，徒欲却蛟龙。</li>
+                    <li>未泯生前恨，而追没后踪。</li>
+                    <li>沅湘碧潭水，应自照千峰。</li>
+                </ul>
+            </li>
+            <li class="navI">
+                <h2 class="navI-tit">《乙卯重五诗》</h2>
+                <ul class="navI-txt ml4">
+                    <p>陆游</p>
+                    <li>重五山村好，榴花忽已繁。</li>
+                    <li>粽包分两髻，艾束著危冠。</li>
+                    <li>旧俗方储药，羸躯亦点丹。</li>
+                    <li>日斜吾事毕，一笑向杯盘。</li>
+                    
+                   
+                </ul>
+            </li>
+        </ul>   
+    </div>
+</div>
+
+<table width="1100" height="188">
+  <tr>
+    <td height="45" colspan="2" align="center" bgcolor="#666666" ><div ="center"><strong><p>关于我们</p></strong></div></td>
+    <td width="302" align="center" bgcolor="#666666"><div ="center"><strong><p>交流中心</p></strong></div></td>
+    <td colspan="3" align="center" bgcolor="#666666"><div ="center"><strong><p>联系我们</p></strong></div></td>
+  </tr>
+  <tr>
+    <td rowspan="3">&nbsp;</td>
+    <td width="262" height="38"><strong><a>电话：0877-999999</a></strong></td>
+    <td><strong><a>版权所有：计专19-2</a></strong></td>
+    <td width="113" rowspan="4">&nbsp;</td>
+    <td width="44" rowspan="4"><div ="center">  <strong><a>扫</a></strong></div>                             
+     <div ="center"><strong><a>一</a></strong></div>  <div ="center"><strong><a>扫</a></strong></div></td>
+    <td width="243" rowspan="4" align="right"><img src="image/二维码.jpg" width="124" height="124"></td>
+  </tr>
+  <tr>
+    <td height="47"><strong><a>邮箱：2239194017strong></td>
+  </tr>
+  <tr>
+    <td colspan="2" rowspan="2" align="center"><div ="left"><strong><a>版权信息</a></strong></div>                          <div ="left"></div></td>
+  </tr>
+  <tr>
+    <td width="58" height="46">&nbsp;</td>
+  </tr>
+</table>
+<form name="form1" method="post" action="">
+<label for="textarea"></label>
+<div>
+<p><br>
+</p>
+</div>
+</form>
+</div>
+</div>
+<div class="link"></div>
+
+
+<div class="cebian">
+<ul>
+<li>优选</li>
+<li>广场</li>
+<li>推荐</li>
+<li>客服</li>
+<li>反馈</li>
+</ul>
+
+</div>
+</boby>
+</html>

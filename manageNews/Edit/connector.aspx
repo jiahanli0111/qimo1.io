@@ -1,0 +1,1 @@
+<%@ Page language="c#" Inherits="JFCmsEnterprise.FileBrowserConnector" AutoEventWireup="false" %>

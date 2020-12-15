@@ -1,0 +1,1 @@
+<%@ Page language="c#" Codebehind="function.aspx.cs" AutoEventWireup="false" Inherits="JFCmsEnterprise.function" %>

@@ -1,0 +1,103 @@
+/*公共样式*/
+body{ background: url(../image/底纹.jpg) ;
+     background-repeat: repeat-x repeat-y; 
+    
+       font-family: "宋体"; }
+a{color: #140101e0;}
+.wrap{ width:1100px; margin: 0 auto;}
+
+/*logo部分*/
+.head 
+.head{width:1100px; height: 200px; } 
+.head_left{float:left;}
+.head_left img{top: 0px;left: 0px; }
+.head_right{float:right;}
+.head_right img{margin: 0px 0px 0px 0px; }
+.head_right{float:right;}
+.div1-right{margin: 0px;
+  width: 214px; 
+height: 41px;
+ border: 1px solid red;
+ margin-top: 10px;
+ float: right;
+}
+.box-left{
+  width:140px;
+  height:38px;
+  margin-right: 70px;
+  float: left;
+  border: 0.5px dashed red;
+  margin: 1px 70px 1px 1px;
+  position: absolute;  
+  }
+  .box-right{
+  width:70px;
+  height:38px;
+  margin-left: 140px;
+  float: left;
+  border: 0.5px dashed red;
+  margin: 1px 1px 1px 142px;
+  background-color: hsla(0, 97%, 34%, 0.671);
+  }
+.div1-right ul{ color: #fff; font-size: 25px; font-family: "宋体";
+  text-align: center; padding: 20px 0 0 0;
+}
+
+.div1-right-1{margin: 0px;
+  width: 140px; 
+  height: 38px;
+ border: 1px solid red;
+ margin-top: 10px;
+ float: right;
+}
+.box-left-1{
+  width:137px;
+  height:35px;
+  margin-right: 0px;
+  float: left;
+  border: 0.5px dashed red;
+  margin: 1.5px 1.5px 1.5px 1.5px;
+  position: absolute;  
+  background-color: hsl(189, 66%, 83%);
+  }
+.div1-right-1 ul{ color: #fff; font-size: 25px; font-family: "宋体";
+  text-align: center; padding: 20px 0 0 0;
+}
+.wrap_left {float:left}
+.wrap_left img{margin-top:60px;margin-left: 100px;}
+.wrap_left-1 {float:left}
+.wrap_left-1 img{margin-top:5px;margin-left: 90px;}
+.wrap_left-2{float:left}
+.wrap_left-2 img{margin-top:0px;margin-left: 200px;}
+.wrap_left-3{float:left}
+.wrap_left-3 img{margin-top:0 px;margin-left: 200px;}
+
+
+/*广告部分*/
+*{padding: 0px;margin: 0px;}
+.flash{width:1100px;height:320px;margin: 200px auto;position: relative;}
+.play{width:1100px;height: 320px;list-style: none;position:absolute;top:0px;left:0px;}
+.play li{display: none;position:absolute;top:0px;left:0px;}
+.play li img{float: left; transition: all 2s;}
+.button{position: absolute;bottom:20px;left:470px;list-style: none;}
+.button li{margin-left: 10px;float: left;}
+.button li div{width:12px;height: 12px;background:black;border-radius: 6px;cursor: pointer;}
+.prev{width:40px;height:63px;background:url(image/beijing.png) 0px 0px;position: absolute;top:205px;left:10px;z-index: 1000;}
+.next{width:40px;height:63px;background:url(image/beijing.png) -40px 0px;position: absolute;top:205px;right:10px;z-index: 1000;}
+.prev:hover{background:url(image/beijing.png) 0px -62px;}
+.next:hover{background:url(image/beijing.pngg) -40px -62px;}
+/*导航部分*/
+.menu{ width:1100px; height: 44px; background-color: rgb(134, 159, 241); line-height: 0px; }
+.menu ul li{ float:left;width:121.2px; height:44px;text-align: center; border-right:1px dashed #fff; position: relative; padding: 20px 0 0 0;}
+.menu ul li a{ color: #fff; font-size: 20px; font-family: "宋体";}
+.menu ul li:hover{ background:url(../image/menu_hover1.PNG) ;}
+.menu ul li:hover a{ font-size: 16px;}
+.menu ul li ul { display: none;  position:absolute; top:44px;left:15px;} 
+.menu ul li:hover ul { display:block; } 
+.menu ul li ul li{ width:120px; background: rgb(82, 80, 80); border-bottom: 1px dashed #fff;} 
+.menu ul li:hover ul li:hover{ background: red;}
+/*侧边栏*/
+.cebian li{list-style: none;font-family: "黑体";font-size: 18px;}
+.cebian{float: left;position: fixed;right: 60px;top: 200px;}
+.cebian li{width: 40px;padding: 10px;border-bottom: 1px dashed black;text-align: center;}
+.cebian li:hover{background: orange;color: #fff;}

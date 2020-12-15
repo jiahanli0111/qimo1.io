@@ -1,0 +1,136 @@
+.flyoutMenu {
+	background-color: #fffffff;
+	border-color: #808080;
+	border-width: 0 0px 0px 0;
+	border-style: none;
+	behavior: url(../images/include-leftmenu.htc);
+}
+.flyoutHeading {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	background-color: #ffffff;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	padding-left: 2px;
+	cursor: default;
+}
+.flyoutLink  {
+	border-color: #fdf3e5;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Arial, 新宋体, 宋体;
+	font-size: 12px;
+	padding-left: 6px;
+	padding-right: 25px;
+	padding-top: 1px;
+	cursor: hand;
+}
+.flyoutMenu TD.flyoutLink  {
+	border-color: #ffffff;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	padding: 1px 25px 3px 6px;
+	cursor: hand;
+}
+.flyoutLink a {
+	color: #000000;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+}
+.flyoutLink a:hover {
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	text-decoration: none;
+}
+.flyoutLink a:visited {
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	text-decoration: none;
+}
+.flyoutLink a:active {
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	text-decoration: none;
+}
+.flyoutSubHeading {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	background-color: #ffffff;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 4px;
+	padding-left: 7px;
+	cursor: default;
+}
+.flyoutSubLink {
+	border-color: #fdf3e5;
+	border-width: 1px;
+	border-style: solid;
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 12px;
+	padding: 1px 15px 3px 11px;
+	cursor: hand;
+}
+.flyoutSubLink a {
+	color: #000000;
+	text-decoration: none;
+}
+.flyoutSubLink a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.flyoutSubLink a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+.flyoutSubLink a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.category_menu { FONT-SIZE: 12px; COLOR: #808080; FONT-FAMILY: Arial, 新宋体, 宋体 }
+.parent_category_menu { FONT-SIZE: 12px; COLOR: #808080; FONT-FAMILY: Arial, 新宋体, 宋体; BACKGROUND-COLOR: #f6f6f6 }
+	
+.tsh {
+	COLOR: #ffffff; FILTER: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)
+}
+a {font-family:"宋体"; font-size:9pt; color:#505050; text-decoration:none;;}
+a:hover {text-decoration:none; color:#4397C5;}
+.white_bg {COLOR: #4397C5; FONT-SIZE: 9pt}
+.t{LINE-HEIGHT: 1.4}
+}
+body,a,form,table,div,span,td,th{font:9pt;LINE-HEIGHT: 150%;font-family: "宋体", Verdana, Arial, Helvetica, sans-serif;}
+SCROLLBAR-HIGHLIGHT-COLOR: buttonface;
+SCROLLBAR-SHADOW-COLOR: buttonface;
+SCROLLBAR-3DLIGHT-COLOR: buttonhighlight;
+SCROLLBAR-TRACK-COLOR: #cccccc;
+SCROLLBAR-DARKSHADOW-COLOR: buttonshadow;
+}
+select{ font-family: 宋体; font-size: 12px; font-weight: normal; background-color: #ffffff; color: #4A4A4A }
+textarea, select {border-width: 1; border-color: #666666; background-color: #ffffff; font-family: 宋体;
+font-size: 9pt; font-style: bold;}
+.button {
+	BACKGROUND-COLOR: #d5dadf; BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #ffffff 1px solid; COLOR: #3c464f; FONT-SIZE: 9pt; HEIGHT: 18px; WIDTH: 40px
+}
+.button80 {
+	BACKGROUND-COLOR: #d5dadf; BORDER-BOTTOM: #000000 1px solid; BORDER-LEFT: #ffffff 1px solid; BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #ffffff 1px solid; COLOR: #3c464f; FONT-SIZE: 9pt; HEIGHT: 18px; WIDTH: 80
+}
+.form80{border:1 groove buttonface;background-color:buttonhighlight;}
+.checkboxClass{border:1 groove buttonface;background-color:red;}
+
+.numTextArea{
+  line-height:16px;
+  width:100%;
+  height:100%;
+  border:none;
+  overflow:auto;
+  word-wrap:normal;
+  }
+  .tdtoptitle { FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #808080; FONT-FAMILY: Arial, 新宋体, 宋体 }
